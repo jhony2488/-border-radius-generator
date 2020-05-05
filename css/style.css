@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+div.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 30px;
+  border: 1px solid whitesmoke;
+  padding: 21px;
+  border-radius: 4px;
+}
+h1.title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+:root {
+  --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+  --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+  --omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+  --omrs-color-interaction: #1e4bd1;
+  --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+  --omrs-color-danger: #b50706;
+  --omrs-color-bg-low-contrast: #eff1f2;
+  --omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: #ffffff;
+}
+div.omrs-input-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+  width: 20.4375rem;
+}
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+  border: none;
+  border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+  width: 100%;
+  height: 2rem;
+  font-size: 1.0625rem;
+  padding-left: 0.875rem;
+  line-height: 147.6%;
+  padding-top: 0.825rem;
+  padding-bottom: 0.5rem;
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+  outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.875rem;
+  line-height: 147.6%;
+  color: var(--omrs-color-ink-medium-contrast);
+  transition: top 0.2s;
+}
+
+.omrs-input-underlined > svg,
+.omrs-input-filled > svg {
+  position: absolute;
+  top: 0.9375rem;
+  right: 0.875rem;
+  fill: var(--omrs-color-ink-medium-contrast);
+}
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+  font-size: 0.9375rem;
+  color: var(--omrs-color-ink-medium-contrast);
+  letter-spacing: 0.0275rem;
+  margin: 0.125rem 0.875rem;
+}
+
+.omrs-input-underlined > input:hover,
+.omrs-input-filled > input:hover {
+  background: var(--omrs-color-interaction-minus-two);
+  border-color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+  top: 0;
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+}
+
+.omrs-input-underlined:not(.omrs-input-danger)
+  > input:focus
+  + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+  color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+  border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
+  fill: var(--omrs-color-ink-high-contrast);
+}
+.omrs-input-underlined > input:disabled {
+  background: var(--omrs-color-bg-low-contrast);
+  cursor: not-allowed;
+}
+
+.omrs-input-underlined > input:disabled + .omrs-input-label,
+.omrs-input-underlined > input:disabled ~ .omrs-input-helper {
+  color: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input:disabled ~ svg {
+  fill: var(--omrs-color-ink-low-contrast);
+}
+
+.omrs-input-underlined > input {
+  background: var(--omrs-color-bg-high-contrast);
+}
+.omrs-input-filled > input {
+  background: var(--omrs-color-bg-low-contrast);
+}
+.square {
+  width: 300px;
+  height: 300px;
+  border: solid black 1px;
+  margin-left: 60px;
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+.container2 {
+  display: grid;
+  justify-items: center;
+  grid-gap: 30px;
+  width: 100%;
+  height: 100vh;
+}
+#alerta {
+  padding: 25px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+  width: 50%;
+}
+
+.atencao {
+  border-color: #f4a911;
+  color: #fff;
+  background-color: #f6bb42;
+}
+.pre {
+  background-color: gray;
+  width: 60%;
+  text-align: center;
+}
+.pre p {
+  font-size: 20px;
+}
+.copy {
+  width: 100px;
+  height: 30px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1em;
+  margin-right: 20px;
+}
+.copy:hover {
+  background-color: #1e4bd1;
+  cursor: pointer;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #121212;
+  padding: 20px;
+  color: whitesmoke;
+}
+.footer a {
+  color: #1eb6d1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer a:hover {
+  color: blueviolet;
+}
+@media (max-width: 900px) {
+  div.container {
+    display: grid;
+    grid-template-columns: 90%;
+  }
+  div.omrs-input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 20.4375rem;
+  }
+  .square {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 500px) {
+  div.omrs-input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 18rem;
+  }
+  .pre {
+    width: 90%;
+  }
+}
+@media (min-width: 1800px) {
+  .pre {
+    height: 16vh;
+  }
+}
+#codigo2 {
+  margin-top: -30px;
+}
+#codigo3 {
+  margin-top: -30px;
+}
