@@ -1,1 +1,1 @@
-# -border-radius-generator
+# border-radius-generator
