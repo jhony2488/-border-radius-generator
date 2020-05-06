@@ -49,7 +49,7 @@ setInterval(() => {
   ) {
     codigo.innerHTML = `-webkit-border-radius: 0px ${topRight} 0px 0px ` + ';'
     codigo2.innerHTML = `-moz-border-radius: 0px ${topRight} 0px 0px ` + ';'
-    codig3.innerHTML = `border-radius: 0px ${topRight} 0px 0px ` + ';'
+    codigo3.innerHTML = `border-radius: 0px ${topRight} 0px 0px ` + ';'
   } else if (
     topLeft === 'px' &&
     topRight === 'px' &&
@@ -170,3 +170,4 @@ setInterval(() => {
     codigo3.innerHTML = `border-radius: ${topLeft} ${topRight} ${bottomRight} ${bottomLeft} `
   }
 }, 100)
+
