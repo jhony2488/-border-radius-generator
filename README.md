@@ -1,3 +1,3 @@
 # border-radius-generator
 
-[Flex Grid](http://exemplo.com/)
+[Demonstration](https://gerador-border-radius.netlify.app/)
